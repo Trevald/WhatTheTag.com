@@ -1,0 +1,175 @@
+[
+    {
+        "title": "I want to collect data from the user",
+        "path": "collect-data",
+        "questions": [
+            {
+                "title": "I have a list of options to choose from",
+                "path": "predefined-options",
+                "questions": [
+                    {
+                        "title": "There are more than seven options",
+                        "path": "many",
+                        "questions": [
+                            {
+                                "title": "You can select only one",
+                                "path": "one",
+                                "answers": 
+                                [
+                                    "select",
+                                    "datalist"
+                                ] 
+                            },
+                            {
+                                "title": "You can select many",
+                                "path": "many",
+                                "answers": 
+                                [
+                                    "select multiple"
+                                ] 
+                            }
+                        ]
+                    },
+                    {
+                        "title": "There's not so many options",
+                        "path": "few",
+                        "questions": [
+                            {
+                                "title": "You can only select one",
+                                "path": "one",
+                                "answers": 
+                                [
+                                    "input type=\"radio\""
+                                ] 
+                            },
+                            {
+                                "title": "You can select many",
+                                "path": "many",
+                                "answers": 
+                                [
+                                    "input type=\"checkbox\""
+                                ] 
+                            }
+                        ]                        
+                    }
+                ]
+            },
+            {
+                "title": "The user should upload something",
+                "path": "file",
+                "answers":
+                [
+                    "input type=\"file\""
+                ]
+            },
+            {
+                "title": "They should enter a moment in time",
+                "path": "datetime",
+                "answers":
+                [
+                    "input type=\"date\""
+                ]                
+            },
+            {
+                "title": "They can write whatever",
+                "path": "free-text",
+                "questions": 
+                [
+                    {
+                        "title": "They can write a lot",
+                        "path": "a-lot",
+                        "answers":
+                        [
+                            "textarea"
+                        ]
+                    },
+                    {
+                        "title": "Just a sentence",
+                        "path": "just-a-little",
+                        "answers":
+                        [
+                            "input type=\"text\""
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "If you click on it something happens",
+        "path": "click",
+        "questions":
+        [
+            {
+                "title": "User will be navigated to a totally new view",
+                "path": "goto",
+                "answers":
+                [
+                    "a"
+                ]
+            },
+            {
+                "title": "Something will happen within the current view",
+                "path": "action",
+                "answers":
+                [
+                    "button"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Something to read",
+        "path": "read-only",
+        "questions":
+        [
+            {
+                "title": "Key -> Value type of data",
+                "path": "key-value",
+                "answers": [
+                    "dl"
+                ]
+            },
+            {
+                "path": "list",
+                "answers": [
+                    "ul",
+                    "ol"
+                ]
+            },
+            {
+                "title": "A heading",
+                "path": "heading",
+                "answers": [
+                    "h1",
+                    "h2",
+                    "h3",
+                    "h4",
+                    "h5",
+                    "h6"
+                ]
+            },
+            {
+                "title": "A quote",
+                "path": "quote",
+                "answers": [
+                    "blockquote"
+                ]
+            },
+            {
+                "title": "Computer code",
+                "path": "code",
+                "answers": [
+                    "pre"
+                ]
+            },
+            {
+                "title": "Just some text",
+                "path": "regular",
+                "answers": [
+                    "p"
+                ]
+            }
+        ]
+    }
+]

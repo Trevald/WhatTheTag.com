@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+body {
+    font-family: "ChunkFive", Arial, Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+button {
+    font-family: "ChunkFive", Arial, Sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+@tailwind utilities;

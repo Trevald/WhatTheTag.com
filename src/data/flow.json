@@ -1,0 +1,33 @@
+[
+    {   
+        "title": "Does it collect data from the user?",
+        "yes": {
+            "title": "Are there predifined options to choose from?",
+            "yes": {
+                "title": "More than seven options?",
+                "yes": {
+                    "title": "Can you select more than one?",
+                    "yes": {},
+                    "no": {}
+                },
+                "no": {
+                    "title": "Can you select more than one?",
+                    "yes": {
+                        "type": "answer",
+                        "title": "<select multiple>",
+                        "description": ""
+                    },
+                    "no": {
+                        "type": "answer",
+                        "title": "<select> or <datalist>",
+                        "description": ""                        
+                    }
+                }
+            },
+            "no": {}
+        },
+        "no": {
+
+        }
+    }
+]
