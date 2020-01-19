@@ -12,8 +12,11 @@
     }
 
 body {
+    background-color: #2d3748;
+    padding: 0.5rem 1.5rem;
     font-family: "ChunkFive", Arial, Sans-serif;
     font-weight: 400;
+    font-size: 1.5rem;;
     letter-spacing: 0.05em;
 }
 
