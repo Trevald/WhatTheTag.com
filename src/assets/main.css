@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('./webfonts/ChunkFive-Regular.woff') format('font-woff'),
+         url('./webfonts/ChunkFive-Regular.woff2') format('font-woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 body {
     font-family: "ChunkFive", Arial, Sans-serif;
     font-weight: 400;

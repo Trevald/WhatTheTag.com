@@ -131,6 +131,7 @@
                 ]
             },
             {
+                "title": "A list of things",
                 "path": "list",
                 "answers": [
                     "ul",
