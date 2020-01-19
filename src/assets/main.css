@@ -1,7 +1,6 @@
 /* purgecss start ignore */
 @tailwind  base;
 @tailwind  components;
-/* purgecss end ignore */
 
 @font-face {
     font-family: 'ChunkFive';
@@ -25,5 +24,7 @@ button {
     font-weight: 400;
     letter-spacing: 0.05em;
 }
+
+/* purgecss end ignore */
 
 @tailwind utilities;
