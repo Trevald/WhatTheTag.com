@@ -2,25 +2,35 @@
 @tailwind  base;
 @tailwind  components;
 
+/*
 @font-face {
-    font-family: 'ChunkFive';
-    src: url('./webfonts/ChunkFive-Regular.woff') format('font-woff'),
-         url('./webfonts/ChunkFive-Regular.woff2') format('font-woff2');
+    font-family: "ChunkFiveWeb";
+    src: url("./webfonts/ChunkFive-Regular.woff2") format("font-woff2"),
+         url("./webfonts/ChunkFive-Regular.woff") format("font-woff");
     font-weight: normal;
     font-style: normal;
+    }
+*/
+    @font-face {
+        font-family: 'chunkfiveregular';
+        src: url('./webfonts/chunkfive-regular-webfont.woff2') format('woff2'),
+             url('./webfonts/chunkfive-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
     }
 
 body {
     background-color: #2d3748;
     padding: 0.5rem 1.5rem;
-    font-family: "ChunkFive", Arial, Sans-serif;
+    font-family: "chunkfiveregular", Arial, Sans-serif;
     font-weight: 400;
     font-size: 1.5rem;;
     letter-spacing: 0.05em;
 }
 
 button {
-    font-family: "ChunkFive", Arial, Sans-serif;
+    font-family: "chunkfiveregular", Arial, Sans-serif;
     font-weight: 400;
     letter-spacing: 0.05em;
 }
