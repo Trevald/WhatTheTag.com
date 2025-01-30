@@ -161,8 +161,10 @@
                 "title": "Computer code",
                 "id": "read-only-code",
                 "answers": [
-                    "pre"
-                ]
+                    "code"
+                ],
+                "comment": "For multiple lines of code wrap the <code> tag in a <pre> tag."
+                
             },
             {
                 "title": "Just some text",

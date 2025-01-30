@@ -19,7 +19,7 @@
                         >
                     </li>
                 </ul>
-                <AppAnswer v-if="hasAnswers" :answers="answers" />
+                <AppAnswer v-if="hasAnswers" :answers="answers" :comment="comment" />
             </div>
         </div>
     </main>
@@ -53,6 +53,10 @@ export default {
             }
 
             return this.question.title
+        },
+
+        comment() {
+            return this.question.comment
         },
 
         question() {
