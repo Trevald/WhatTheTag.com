@@ -14,9 +14,9 @@
 
 <script>
 export default {
-    name: "Answer",
     props: {
-        answers: Array
+        answers: Array,
+        required: true
     },
 
     methods: {
@@ -39,5 +39,3 @@ export default {
     }
 }
 </script>
-
-<style></style>

@@ -1,25 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
-import "@/assets/main.css";
+import { createApp } from "vue"
+import { createWebHistory, createRouter } from "vue-router"
+import "./assets/main.css"
 
-Vue.use(VueRouter)
-Vue.config.productionTip = false
-
-
-import MainView from "./components/MainView";
-
+import App from "./App.vue"
+import AppQuestion from "./components/AppQuestion.vue"
 
 const routes = [
-    { name: "main", path: '*', component: MainView },
-];
+    { name: "home", path: "/", component: AppQuestion },
+    { name: "question", path: "/what/:id", component: AppQuestion }
+]
 
 // Router
-const router = new VueRouter({
+const router = new createRouter({
+    history: createWebHistory(),
     routes
-  })
+})
 
-new Vue({
-    router,
-    render: h => h(App),
-}).$mount('#app')
+createApp(App).use(router).mount("#app")

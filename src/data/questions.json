@@ -1,19 +1,19 @@
 [
     {
         "title": "I want to collect data from the user",
-        "path": "collect-data",
+        "id": "collect-data",
         "questions": [
             {
                 "title": "I have a list of options to choose from",
-                "path": "predefined-options",
+                "id": "collect-data-predefined-options",
                 "questions": [
                     {
                         "title": "There are more than seven options",
-                        "path": "many",
+                        "id": "collect-data-predefined-options-many",
                         "questions": [
                             {
                                 "title": "You can select only one",
-                                "path": "one",
+                                "id": "collect-data-predefined-options-many-one",
                                 "answers": 
                                 [
                                     "select",
@@ -22,7 +22,7 @@
                             },
                             {
                                 "title": "You can select many",
-                                "path": "many",
+                                "id": "collect-data-predefined-options-many-many",
                                 "answers": 
                                 [
                                     "select multiple"
@@ -32,11 +32,11 @@
                     },
                     {
                         "title": "There's not so many options",
-                        "path": "few",
+                        "id": "collect-data-predefined-options-few",
                         "questions": [
                             {
                                 "title": "You can only select one",
-                                "path": "one",
+                                "id": "collect-data-predefined-options-few-one",
                                 "answers": 
                                 [
                                     "input type=\"radio\""
@@ -44,7 +44,7 @@
                             },
                             {
                                 "title": "You can select many",
-                                "path": "many",
+                                "id": "collect-data-predefined-options-few-many",
                                 "answers": 
                                 [
                                     "input type=\"checkbox\""
@@ -56,7 +56,7 @@
             },
             {
                 "title": "The user should upload something",
-                "path": "file",
+                "id": "file",
                 "answers":
                 [
                     "input type=\"file\""
@@ -64,7 +64,7 @@
             },
             {
                 "title": "They should enter a moment in time",
-                "path": "datetime",
+                "id": "datetime",
                 "answers":
                 [
                     "input type=\"date\""
@@ -72,12 +72,12 @@
             },
             {
                 "title": "They can write whatever",
-                "path": "free-text",
+                "id": "free-text",
                 "questions": 
                 [
                     {
                         "title": "They can write a lot",
-                        "path": "a-lot",
+                        "id": "free-text-a-lot",
                         "answers":
                         [
                             "textarea"
@@ -85,7 +85,7 @@
                     },
                     {
                         "title": "Just a sentence",
-                        "path": "just-a-little",
+                        "id": "free-text-just-a-little",
                         "answers":
                         [
                             "input type=\"text\""
@@ -97,12 +97,12 @@
     },
     {
         "title": "If you click on it something happens",
-        "path": "click",
+        "id": "click",
         "questions":
         [
             {
                 "title": "User will be navigated to a totally new view",
-                "path": "goto",
+                "id": "click-goto",
                 "answers":
                 [
                     "a"
@@ -110,7 +110,7 @@
             },
             {
                 "title": "Something will happen within the current view",
-                "path": "action",
+                "id": "click-action",
                 "answers":
                 [
                     "button"
@@ -120,19 +120,19 @@
     },
     {
         "title": "Something to read",
-        "path": "read-only",
+        "id": "read-only",
         "questions":
         [
             {
                 "title": "Key -> Value type of data",
-                "path": "key-value",
+                "id": "read-only-key-value",
                 "answers": [
                     "dl"
                 ]
             },
             {
                 "title": "A list of things",
-                "path": "list",
+                "id": "read-only-list",
                 "answers": [
                     "ul",
                     "ol"
@@ -140,7 +140,7 @@
             },
             {
                 "title": "A heading",
-                "path": "heading",
+                "id": "read-only-heading",
                 "answers": [
                     "h1",
                     "h2",
@@ -152,21 +152,21 @@
             },
             {
                 "title": "A quote",
-                "path": "quote",
+                "id": "read-only-quote",
                 "answers": [
                     "blockquote"
                 ]
             },
             {
                 "title": "Computer code",
-                "path": "code",
+                "id": "read-only-code",
                 "answers": [
                     "pre"
                 ]
             },
             {
                 "title": "Just some text",
-                "path": "regular",
+                "id": "read-only-regular",
                 "answers": [
                     "p"
                 ]

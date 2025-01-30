@@ -1,31 +1,19 @@
-/* purgecss start ignore */
-@tailwind  base;
-@tailwind  components;
+@import "tailwindcss";
 
-/*
 @font-face {
-    font-family: "ChunkFiveWeb";
-    src: url("./webfonts/ChunkFive-Regular.woff2") format("font-woff2"),
-         url("./webfonts/ChunkFive-Regular.woff") format("font-woff");
+    font-family: 'chunkfiveregular';
+    src: url('./webfonts/chunkfive-regular-webfont.woff2') format('woff2'),
+            url('./webfonts/chunkfive-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
-*/
-    @font-face {
-        font-family: 'chunkfiveregular';
-        src: url('./webfonts/chunkfive-regular-webfont.woff2') format('woff2'),
-             url('./webfonts/chunkfive-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    
-    }
+}
 
 body {
     background-color: #2d3748;
-    padding: 0.5rem 1.5rem;
+    padding: 0;
     font-family: "chunkfiveregular", Arial, Sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
     letter-spacing: 0.05em;
 }
 
@@ -35,6 +23,39 @@ button {
     letter-spacing: 0.05em;
 }
 
-/* purgecss end ignore */
 
-@tailwind utilities;
+#app {
+    display: grid;
+    width: 100%;
+    min-height: 100dvh;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    grid-row-gap: 0;
+}
+
+
+
+footer .breadcrumbs li:not(:last-child)::after {
+    content: "/";
+    padding: 0 1rem;
+}
+
+.cred li {
+    display: inline;
+}
+
+.cred li:not(:last-child)::after {
+    content: ", ";
+}
+
+.answer {
+    width: 50vw;
+    min-width: 300px;
+}
